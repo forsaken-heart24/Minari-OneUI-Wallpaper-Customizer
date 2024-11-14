@@ -1,6 +1,6 @@
 # ⭐ FLOSSPaperOneUI
 
-![flosspaper-banner](https://github.com/forsaken-heart24/FLOSSPaperOneUI/blob/main/banner_image/FLOSSPaper_rounded_final.png?raw=true)
+![flosspaper-banner](https://github.com/forsaken-heart24/i_dont_want_to_be_an_weirdo/blob/main/banner_images/FLOSSPaper_rounded_final.png?raw=true)
 
 **Customize Your Samsung OneUI ROM'S Wallpapers**
 
