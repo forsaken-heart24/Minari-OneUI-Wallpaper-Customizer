@@ -168,24 +168,22 @@ function main () {
             echo -e "\e[0;31m - Warning! The default lockscreen wallpaper was not included in the lists.\e[0;37m"
         fi
     fi
-
-    # Final message and move the JSON file to the appropriate location
-    echo -e "\e[0;31m"
-    echo "######################################################################"
-    echo "#                                                                    #"
-    echo "#       __        ___    ____  _   _ ___ _   _  ____ _               #"
-    echo "#       \ \      / / \  |  _ \| \ | |_ _| \ | |/ ___| |              #"
-    echo "#        \ \ /\ / / _ \ | |_) |  \| || ||  \| | |  _| |              #"
-    echo "#         \ V  V / ___ \|  _ <| |\  || || |\  | |_| |_|              #"
-    echo "#          \_/\_/_/   \_\_| \_\_| \_|___|_| \_|\____(_)              #"
-    echo "#                                                                    #"
-    echo "#                                                                    #"
-    echo "######################################################################"
-    echo -e "\e[1;36m"
-    echo -e "  Be sure to move the images to the drawable-nodpi/ folder with their appropriate names."
-    echo -e "\e[0;31m  This script is still in beta stages. Please check the \"res/raw/resources_info.json\" if you're concerned about issues."
-    echo -e "  Thanks for your time!\e[0;37m"
 }
 
 # nein nein
 main
+echo -e "\e[0;31m"
+echo "######################################################################"
+echo "#                                                                    #"
+echo "#       __        ___    ____  _   _ ___ _   _  ____ _               #"
+echo "#       \ \      / / \  |  _ \| \ | |_ _| \ | |/ ___| |              #"
+echo "#        \ \ /\ / / _ \ | |_) |  \| || ||  \| | |  _| |              #"
+echo "#         \ V  V / ___ \|  _ <| |\  || || |\  | |_| |_|              #"
+echo "#          \_/\_/_/   \_\_| \_\_| \_|___|_| \_|\____(_)              #"
+echo "#                                                                    #"
+echo "#                                                                    #"
+echo "######################################################################"
+echo -e "\e[1;36m"
+echo -e "  Be sure to move the images to the drawable-nodpi/ folder with their appropriate names."
+echo -e "\e[0;31m  This script is still in beta stages. Please check the \"res/raw/resources_info.json\" if you're concerned about issues."
+echo -e "  Thanks for your time!\e[0;37m"
