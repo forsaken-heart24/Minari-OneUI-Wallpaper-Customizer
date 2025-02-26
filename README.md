@@ -1,34 +1,29 @@
-# ⭐ FLOSSPaperOneUI
+# ⭐ Minari Wallpaper Customizer
 
-![flosspaper-banner](https://github.com/forsaken-heart24/i_dont_want_to_be_an_weirdo/blob/main/banner_images/FLOSSPaper_rounded_final.png?raw=true)
+![minari-banner](https://github.com/forsaken-heart24/i_dont_want_to_be_an_weirdo/blob/main/banner_images/FLOSSPaper_rounded_final.png?raw=true)
 
 **Customize Your Samsung OneUI ROM'S Wallpapers**
 
-⭐️ An open-source tool to help you personalize your modified samsung stock ROM'S wallpapers using an 
-bash script to make a json file that is used in the samsung's wallpaper-res application
+⭐️ An open-source app to help you personalize your modified OneUI rom's wallpapers using an 
+bash script to make a json file that is used in the wallpaper-res application
 for the wallpaper(s) and it's informations.
 
 ❣ i hope it would be an useful tool for you, thank me later if it is!
 
-# 🔆 How to use this bash script? (requires terminal or termux to be installed.)
+# Pre-requisites:
+- Install openjdk or any java toolchain
+- Borrow brain from a nerd if you don't know what are you doing:
+
+# How to use this?
+
+## Clone this repo if you still haven't done yet:
 ```
-pkg install git || sudo apt install git; git clone https://github.com/forsaken-heart24/FLOSSPaperOneUI/; cd FLOSSPaperOneUI; chmod +x FLOSSPaper.sh && ./FLOSSPaper.sh
+git clone https://github.com/forsaken-heart24/Minari-OneUI-Wallpaper-Customizer
 ```
 
-# ⭕ What to do after executing the script?
-* The shell script will tell you where did the resources_info.json file is located after the job is being done.
+## Execute the script:
+- You need to switch to the cloned dir and you have to give executable permissions to minari.sh
+- And after doing that you have to execute minari.sh in your local machine.
 
-* If you have the file on that folder, copy and disassemble the "wallpaper-res.apk" application, which is located in the "system/priv-app/wallpaper-res" folder, from your legally purchased Samsung device(s).
-
-* After disassembling, copy the "resources_info.json" file into the decompiled application's data folder, named "res/raw". Add the wallpaper images into the "res/drawable-nodpi" folder with their appropriate names.
-
-* Recompile the application, sign the new APK, and place it in the "system/priv-app/wallpaper-res/" folder. Finally, reboot your device. You're now set up with custom wallpapers in the system.
-
-## ❌ Wanna improve it, or want to give any ideas? Join our support chat for more!
-* [Telegram Chat](https://t.me/equinoxfromlunaandetclore)
- 
-## 🛑 Supported OneUI Versions (for now)
--------------------
-
-* OneUI 3.1
-* OneUI 4.1
+# I'm confused, what should i do?
+## Just execute the script and follow the on-screen instructions, you'll get an idea by that.
