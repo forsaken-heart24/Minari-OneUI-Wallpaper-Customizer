@@ -26,4 +26,4 @@ git clone https://github.com/forsaken-heart24/Minari-OneUI-Wallpaper-Customizer
 - And after doing that you have to execute minari.sh in your local machine.
 
 # I'm confused, what should i do?
-## Just execute the script and follow the on-screen instructions, you'll get an idea by that.
+- Just execute the script and follow the on-screen instructions, you'll get an idea by that.
