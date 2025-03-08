@@ -12,7 +12,7 @@ function build_and_sign() {
     rm -rf ${extracted_dir_path}/dist/*
     java -jar ./bin/apktool.jar build --api-level "${BUILD_TARGET_SDK_VERSION}" "${extracted_dir_path}" &>/dev/null
     java -jar ./bin/signer.jar --apk ${extracted_dir_path}/dist/*.apk
-    mv ${extracted_dir_path}/dist/$(ls | grep aligned-debugSigned.apk | head -n 1) $app_path/
+    mv ${extracted_dir_path}/dist/$(ls | grep aligned-debugSigned.apk | head -n 1) $app_path/minari-cust-output.apk
     rm -rf ${extracted_dir_path}/build ${extracted_dir_path}/dist/
 }
 
@@ -39,7 +39,7 @@ function ADD_THE_WALLPAPER_METADATA() {
             ;;
     esac
 
-    cat >> resources_info.json << EOF
+    cat >> "./app/res/raw/resources_info.json" << EOF
     {
         "isDefault": ${isDefault},
         "index": ${index},
@@ -55,7 +55,7 @@ EOF
     printf " - Enter the path to the default ${type^} wallpaper: "
     read path
     if [ -f "$path" ]; then
-        cp -af "$path" "./res/drawable-nodpi/${filename}"
+        cp -af "$path" "./app/res/drawable-nodpi/${filename}"
     fi
     clear
 }
@@ -73,8 +73,8 @@ function main() {
     fi
     clear
 
-    rm -rf resources_info.json
-    echo -e "{\n\t\"version\": \"0.0.1\",\n\t\"phone\": [" > resources_info.json
+    rm -rf "./app/res/raw/resources_info.json"
+    echo -e "{\n\t\"version\": \"0.0.1\",\n\t\"phone\": [" > ./app/res/raw/resources_info.json
 
     for ((i = 1; i <= wallpaper_count; i++)); do
         if [ "${i}" -ge "10" ]; then
@@ -115,12 +115,12 @@ function main() {
             esac
         fi
     done
-    echo -e "  ]\n}" >> resources_info.json
-    build_and_sign "." "."
+    echo -e "  ]\n}" >> ./app/res/raw/resources_info.json
+    build_and_sign "./app" "."
 }
 
 clear
-if ! command -v java; then
+if ! command -v java &>/dev/null; then
     echo -e "\e[1;36m - Please install openjdk or any java toolchain to continue.\e[0;37m"
     sleep 0.5
     exit 1
