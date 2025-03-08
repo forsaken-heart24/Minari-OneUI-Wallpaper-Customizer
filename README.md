@@ -1,6 +1,6 @@
 # ⭐ Minari Wallpaper Customizer
 
-![minari-banner](https://github.com/forsaken-heart24/i_dont_want_to_be_an_weirdo/blob/main/banner_images/FLOSSPaper_rounded_final.png?raw=true)
+![minari-banner](https://github.com/forsaken-heart24/i_dont_want_to_be_an_weirdo/blob/main/banner_images/minari_banner.png?raw=true)
 
 **Customize Your Samsung OneUI ROM'S Wallpapers**
 
