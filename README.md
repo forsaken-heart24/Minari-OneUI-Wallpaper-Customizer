@@ -2,28 +2,51 @@
 
 ![minari-banner](https://github.com/forsaken-heart24/i_dont_want_to_be_an_weirdo/blob/main/banner_images/minari_banner.png?raw=true)
 
-**Customize Your Samsung OneUI ROM'S Wallpapers**
+**Personalize Your Samsung OneUI ROM Wallpapers**
 
-⭐️ An open-source app to help you personalize your modified OneUI rom's wallpapers using an 
-bash script to make a json file that is used in the wallpaper-res application
-for the wallpaper(s) and it's informations.
+⭐️ Minari Wallpaper Customizer is an open-source tool designed to help you create and manage custom wallpapers for your modified OneUI ROM. It uses a bash script to generate a JSON file compatible with the wallpaper-res application, enabling seamless customization.
 
-❣ i hope it would be an useful tool for you, thank me later if it is!
+---
 
-# Pre-requisites:
-- Install openjdk or any java toolchain
-- Borrow brain from a nerd if you don't know what are you doing:
+## Features:
+- Effortlessly generate JSON files for wallpaper configurations.
+- Fully open-source and customizable.
+- Simplifies the process of managing wallpaper metadata.
 
-# How to use this?
+---
 
-## Clone this repo if you still haven't done yet:
-```
+## Prerequisites:
+- Install OpenJDK or any Java toolchain.
+- Basic familiarity with terminal commands (or a helpful friend who does).
+
+---
+
+## Getting Started:
+
+### Clone the Repository:
+```bash
 git clone https://github.com/forsaken-heart24/Minari-OneUI-Wallpaper-Customizer
 ```
 
-## Execute the script:
-- You need to switch to the cloned dir and you have to give executable permissions to minari.sh
-- And after doing that you have to execute minari.sh in your local machine.
+### Run the Script:
+1. Navigate to the cloned directory:
+    ```bash
+    cd Minari-OneUI-Wallpaper-Customizer
+    ```
+2. Grant executable permissions to the script:
+    ```bash
+    chmod +x minari.sh
+    ```
+3. Execute the script:
+    ```bash
+    ./minari.sh
+    ```
 
-# I'm confused, what should i do?
-- Just execute the script and follow the on-screen instructions, you'll get an idea by that.
+---
+
+## Need Help?
+- Simply run the script and follow the on-screen instructions. The process is straightforward and user-friendly.
+
+---
+
+❣ If you find this tool helpful, feel free to share your feedback or contribute to the project!
